@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Minimalist Blog</title>
+    <style>
+        /* CSS Variables for easy color swapping */
+        :root {
+            --primary-color: #2d3436;
+            --accent-color: #0984e3;
+            --bg-color: #f9f9f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        article {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        article h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .meta {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                margin: 1rem auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Midnight Journal</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article>
+            <div class="meta">Published on February 22, 2026</div>
+            <h2>The Art of Simplification</h2>
+            <p>In a world of constant noise, finding silence is a superpower. Today we explore how stripping away the non-essential can lead to a more focused and creative life...</p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+
+        <article>
+            <div class="meta">Published on February 15, 2026</div>
+            <h2>Why I Started Using Dark Mode</h2>
+            <p>It's not just about the aesthetic; it's about the eyes. After spending 12 hours a day in front of a screen, I realized my bright white IDE was doing more harm than good...</p>
+            <a href="#" class="read-more">Read More →</a>
+        </article>
+    </div>
+
+    <footer>
+        &copy; 2026 The Midnight Journal. Built with caffeine and curiosity.
+    </footer>
+
+</body>
+</html>
